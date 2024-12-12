@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo/logo.jpg" alt="Aesthethic" id="logo">
+    <a href="" class="logo">Aesthethic</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="#">About  <i class="fa-solid fa-caret-down"></i></a>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+     <div class="icon">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+      <a href="#"><i class="fa-regular fa-user" id="user"></i></a>
+        <ul>
+          <li><a href="" onchange="log();" id="log">Log In</a></li>
+          <li><a href="" id="EditProfile">Edit Profile</a></li>
+          <li><a href="" id="setting">Setting & Privacy</a></li>
+          <li><a href="" id="sign"><i class="fa-solid fa-arrow-right-to-bracket"></i>Sign Out</a></li>
+        </ul>
+    </div>
+  </header>
+
+<section class="receipt">
+    <h1>Receipt</h1>
+    
+  <table>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Image</th>
+        <th>Total</th>
+    </tr>
+  </table>
+
+  <table id="receiptTable">
+    <!-- Table structure remains the same -->
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+  </table>
+  
+  <button onclick="clearReceipt()">Clear Receipt and Start New</button>
+</section>
+
+<script src="receipt.js"></script>
+
+</body>
+
+</html>

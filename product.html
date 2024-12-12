@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo/logo.jpg" alt="Aesthethic" id="logo">
+    <a href="" class="logo">Aesthethic</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="#">About  <i class="fa-solid fa-caret-down"></i></a>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+     <div class="icon">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
+      <a href="#"><i class="fa-regular fa-user" id="user"> </i></a>
+        <ul>
+          <li><a href="" onchange="log();" id="log">Log In</a></li>
+          <li><a href="" id="EditProfile">Edit Profile</a></li>
+          <li><a href="" id="setting">Setting & Privacy</a></li>
+          <li><a href="" id="sign"><i class="fa-solid fa-arrow-right-to-bracket"></i>Sign Out</a></li>
+        </ul>
+    </div>
+    
+     <div class="search">
+    <label for="">Sort by:</label>
+    <select name="" id="sort">
+      <option value="">Name</option>
+      <option value="">Brand</option>
+      <option value="">New Release</option>
+    </select>
+    
+   <input type="search" placeholder="Search items" id="search">
+   
+   <select name="category" id="category">
+     <option value="recommend">Category</option>
+     <option value="shoe">Shoes</option>
+     <option value="t-shirt">T-shirt</option>
+     <option value="pants">Pants</option>
+   </select>
+  </div>
+  </header>
+  
+  <!-- Product Sectiom -->
+  
+  <section class="recommend" id="recommend">
+    <div class="header">
+    <h1>Recommend</h1>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="item/item3.jpg" alt="Product">
+        <h2>Vneck Vesst houndsout</h2>
+        <h4>$13.05</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+          <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Vneck Vesst houndsout', 13.05, 'item/item3.jpg' )">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+     <div class="container">
+      <div class="box">
+        <img src="item/shoe/adidas.jpg" alt="Product">
+        <h2>Adidas Original Superstar</h2>
+        <h4>$180.05</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Adidas Original Superstar', 180.05, 'item/shoe/adidas.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+     <div class="container">
+      <div class="box">
+        <img src="item/item4.jpg" alt="">
+        <h2>Over Size Plain T-shirt</h2>
+        <h4>$9.05</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+          <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Over Size Plain T-shirt', 9.05, 'item/item4.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+     <div class="container">
+      <div class="box">
+        <img src="item/shoe/filla.jpg" alt="">
+        <h2>FILA Disruptor II</h2>
+        <h4>$200.99</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('FILA Disruptor II', 200.99, 'item/shoe/filla.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+     <div class="container">
+      <div class="box">
+        <img src="item/item2.jpg" alt="">
+        <h2>UNIQLO</h2>
+        <h4>$13.05</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+         <button onclick="addToCart('UNIQLO', 13.05, 'item/item2.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr>
+
+<!-- Shoe -->
+
+  <section class="shoe" id="shoe">
+    
+    <div class="header">
+      <h1>Shoe</h1>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="item/shoe/filla.jpg" alt="">
+        <h2>FILA Disruptor II</h2>
+        <h4>$200.99</h4>
+        <p>Our Disruptor 2 women's sneakers are the kind of shoes that scream to be seen. 
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('FILA Disruptor II', 200.99, 'item/shoe/filla.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="item/shoe/nike1.jpg" alt="">
+        <h2>Nike Air Force 1</h2>
+        <h4>$150.70</h4>
+        <p> Crossing hardwood comfort with off-court flair, it puts a fresh spin on what you know best: era-echoing, ‘80s construction, bold details and nothin’-but-net style.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Nike Air Force 1', 150.70, 'item/shoe/nike1.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="item/shoe/shoe.jpg" alt="">
+        <h2>Boys Deck Shoes</h2>
+        <h4>$100.05</h4>
+        <p>Boys Deck Shoes Leather Casual Sneaker Running Shoes For Men Designer Sneakers Plush Warm Winter New In Style
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Boys Deck Shoes', 100.05, 'item/shoe/shoe.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="item/shoe/adidas.jpg" alt="">
+        <h2>Adidas Original Superstar</h2>
+        <h4>$180.05</h4>
+        <p>This '70s sneaker began life as a court-dominating basketball shoe.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Adidas Original Superstar', 180.05, 'item/shoe/adidas.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="item/shoe/puma.jpg" alt="">
+        <h2>Slipstream Sneakers</h2>
+        <h4>$120.80</h4>
+        <p>PUMA Slipstream Mid entered the scene as a basketball sneaker. A high-flying, slam-dunking, statement-making basketball sneaker.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Slipstream Sneakers', 120.80, 'item/shoe/puma.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    
+  </section>
+  
+  <!-- T-shirt -->
+  
+  <section class="t-shirt" id="t-shirt">
+    
+    <div class="header">
+      <h1>T-shirt</h1>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/shirt /goods.jpg" alt="">
+        <h2>U airism cotton crew neck</h2>
+        <h4>$15.0</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('U airism cotton crew neck', 15.00, '/item/shirt /goods.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/shirt /item5.jpg" alt="">
+        <h2>T-shirt Minimalist Design</h2>
+        <h4>$10.0</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('T-shirt Minimalist Design', 10.00, '/item/shirt /item5.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/shirt /OX.jpg" alt="">
+        <h2>OX T-shirt</h2>
+        <h4>$9.00</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('OX T-shirt', 9.00, '/item/shirt /OX.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/shirt /Rokman.jpg" alt="">
+        <h2>Rokman T-shirt</h2>
+        <h4>$12.05</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Rokman T-shirt', 12.00, '/item/shirt /Rokman.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/shirt /shortsleeve.jpg" alt="">
+        <h2>Short sleeve T-shirt</h2>
+        <h4>$10.00</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Short sleeve T-shirt', 10.00, '/item/shirt /shortsleeve.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+   
+  </section>  
+  
+  <!-- Pants -->
+  
+  <section class="pants" id="pants">
+    <div class="header">
+      <h1>Pants</h1>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/pants/cargopants.jpg" alt="">
+        <h2>Cargo Pants</h2>
+        <h4>$11.05</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Cargo Pants', 11.05, '/item/pants/cargopants.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/pants/womenpants.jpg" alt="">
+        <h2>Women's Airsense Pants</h2>
+        <h4>$12.00</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Womens Airsense Pants', 12.00, '/item/pants/womenpants.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/pants/truewerk.jpg" alt="">
+        <h2>TRUEWERK Pants</h2>
+        <h4>$13.00</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('TRUEWERK Pants', 13.00, '/item/pants/truewerk.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/pants/Rebel.jpg" alt="">
+        <h2>Mens UA Drive Tapered Pants</h2>
+        <h4>$18.00</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Mens UA Drive Tapered Pants', 18.00, '/item/pants/Rebel.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="box">
+        <img src="/item/pants/WomenTapered.jpg" alt="">
+        <h2>Women's Tapered Pants</h2>
+        <h4>$15.00</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         </p>
+         <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+          </div>
+          <hr>
+        <div class="button">
+          <button onclick="buyItems()">Buy Now</button>
+          <button onclick="addToCart('Women Tapered Pants', 15.00, '/item/pants/WomenTapered.jpg')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    
+   
+  </section>
+  
+  <!-- Add Additional Section Here -->
+
+  <script src="main.js"></script>
+</body>
+</html>
